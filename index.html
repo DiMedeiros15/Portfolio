@@ -5,6 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
+    <meta name="description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos Passeio, Retrô e Esporte.">
+
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Portfólio"/>
+    <meta property="og:description" content="Front End em desenvolvimento"/>
+    <meta property="og:url" content="http://daraujo.ga/"/>
+    <meta property="og:image" content="http://daraujo.ga/img/og-image.png"/>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="#">
+
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"> </script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
@@ -33,13 +46,13 @@
     </nav>
 
     <!-- home section start -->
-    <section class="home" id="home">
+    <section class="home animar-interno" id="home">
         <div class="max-width">
         <div class="home-content">
         <div class="text-1">Olá, Meu nome é</div>
         <div class="text-2">Diego Medeiros</div>
         <div class="text-3"> <span class="escrevendo"></span></div>
-        <a href="#">esconder</a>
+        <!-- <a href="#">esconder</a> -->
     </div>  
     </div>
     </section>
@@ -50,12 +63,12 @@
                 <h2 class="title">Sobre</h2>
             <div class="about-content">
             <div class="column left">
-                <img src="diego.jpg" alt="Diego">
+                <img src="diego.png" alt="Diego">
             </div>
         <div class="column right">
         <div class="text"> Sou <span class="escrevendo-2"></span></div>
             <p> Desde muito novo tenho paixão pela área de informatica e curiosidade de como funcionava os Hardwares, perifericos e apps.
-            </p>   <br> 
+            </p> 
             <p>
                 Em 2019 comecei a programar, ano que iniciei na graduação      de   Sistemas da Informação. Desde então, descobrir interesse
                 pelos códigos e o mundo da tecnologia, onde me levou a cada vez mais buscar informações. <br><br>
@@ -83,19 +96,76 @@
             tal como, fórmulas e tabela dinâmica no excel.            
         </p>
         <a href="#">Leia Mais</a>
-        </div>  
+        </div>      
+
     <div class="column right">
-        <div class="bars">
+        
+        <ul class="rslides">
+            <li>
+                <blockquote class="quote_interno" >
+                    <div class="bars">
+                        <div class="info">
+                            <span><abbr title="HyperText Markup Language">HTML</abbr></span>
+                            <span>50%</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span><abbr title="Cascading Style Sheets">CSS</abbr></span>
+                            <span>50%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>JavaScript</span>
+                            <span>25%</span>
+                        </div>
+                        <div class="line js"></div>
+                    </div> 
+                </blockquote>
+            </li>
+            <li>
+                <blockquote class="quote_interno" >
+                    <div class="bars">
+                        <div class="info">
+                            <span>Java</span>
+                            <span>25%</span>
+                        </div>
+                        <div class="line java"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Python</span>
+                            <span>25%</span>
+                        </div>
+                        <div class="line p"></div>
+                    </div> 
+                </blockquote>
+            </li>
+            <li>             
+                    <div class="bars">
+                        <div class="info">
+                            <span>Pacote Office</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line office"></div>
+                    </div>             
+             </li>
+        </ul>
+        
+        <!-- <div class="bars">
             <div class="info">
                 <span><abbr title="HyperText Markup Language">HTML</abbr></span>
-                <span>40%</span>
+                <span>50%</span>
             </div>
             <div class="line html"></div>
         </div>
         <div class="bars">
             <div class="info">
                 <span><abbr title="Cascading Style Sheets">CSS</abbr></span>
-                <span>30%</span>
+                <span>50%</span>
             </div>
             <div class="line css"></div>
         </div>
@@ -109,16 +179,16 @@
         <div class="bars">
             <div class="info">
                 <span>Java</span>
-                <span>40%</span>
+                <span>25%</span>
             </div>
             <div class="line java"></div>
         </div>
         <div class="bars">
             <div class="info">
-                <span>C++</span>
-                <span>40%</span>
+                <span>Python</span>
+                <span>25%</span>
             </div>
-            <div class="line c"></div>
+            <div class="line p"></div>
         </div>
         <div class="bars">
             <div class="info">
@@ -126,7 +196,7 @@
                 <span>70%</span>
             </div>
             <div class="line office"></div>
-        </div>
+        </div> -->
     </div>
     </div>
 </section>
@@ -181,12 +251,22 @@
 
 <!-- redapé section start-->
 <footer>
-    <span>Criado by <a href="#"> Diego Medeiros</a> | <span class="far fa-copyright"> Copyright 2020.</span> </span>
-    <p> &raquo;<a href=https://www.facebook.com/diego.medeiros.3990 target="_blank"> Facebook </a> |
-        &raquo;<a href="https://www.instagram.com/_diimedeiross/"  target="_blank">  Instagram </a>
-        &raquo;<a href="https://www.linkedin.com/in/diego-medeiros-66a504166/"  target="_blank"> Linkedin</a> </p> 
+    <span>Criado por <a href="#"> Diego Medeiros</a> | <span class="far fa-copyright"> Copyright 2021.</span> </span>
+    <p> &raquo;<a href=https://github.com/DiMedeiros15 target="_blank"> GitHub </a> |
+        &raquo;<a href="https://www.linkedin.com/in/diego-medeiros-66a504166/"  target="_blank"> Linkedin</a></p> 
 </footer>
 
-<script src="script.js"></script>
+<!-- JavaScript -->
+<script src="js/script.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>windows.jQuery || document.write('<script src="js/libs/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<!-- Final JS -->
+<script>
+    $(function() {
+      $(".rslides").responsiveSlides();
+    });
+  </script>
 </body>
 </html>

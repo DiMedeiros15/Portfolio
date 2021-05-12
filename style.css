@@ -161,7 +161,7 @@ section .title::after{
 /* seção home*/
 .home{
     display: flex;
-    background: url("../Portfolio/foto.jpg") no-repeat center;
+    background: url("foto.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -213,10 +213,13 @@ section .title::after{
         width: 45%;
     }
     .about .about-content .left img{
-        height: 400px;
-        width: 400px;
+        height: 350px;
+        width: 350px;
         object-fit: cover;
-        border-radius: 6px;
+        border-radius: 180px;
+        border: 2px solid #cecece;
+        box-shadow: 5px 5px 5px #cecece;
+
     }
     .about .about-content .right{
         width: 55%;
@@ -364,22 +367,22 @@ section .title::after{
     background: crimson;
 }
 .skills .skills-content .right .html::before{
-   width: 40%;
+   width: 50%;
 }
 .skills .skills-content .right .css::before{
-   width: 30%;
+   width: 50%;
 }
 .skills .skills-content .right .js::before{
    width: 25%;
 }
 .skills .skills-content .right .java::before{
-   width: 40%;
+   width: 25%;
 }
-.skills .skills-content .right .c::before{
-   width: 40%;
+.skills .skills-content .right .p::before{
+   width: 25%;
 }
 .skills .skills-content .right .office::before{
-   width: 70%;
+   width: 75%;
 }
 
 
@@ -455,6 +458,103 @@ footer a:hover {
     color: rgb(125, 133, 133);
     transition: all 0.3s ease;
 }
+
+/* Animações */
+
+.js .animar-interno {
+    opacity:0;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  @keyframes swing {
+    20% {
+      -webkit-transform: rotate3d(0, 0, 1, 15deg);
+      transform: rotate3d(0, 0, 1, 15deg);
+    }
+  
+    40% {
+      -webkit-transform: rotate3d(0, 0, 1, -10deg);
+      transform: rotate3d(0, 0, 1, -10deg);
+    }
+  
+    60% {
+      -webkit-transform: rotate3d(0, 0, 1, 5deg);
+      transform: rotate3d(0, 0, 1, 5deg);
+    }
+  
+    80% {
+      -webkit-transform: rotate3d(0, 0, 1, -5deg);
+      transform: rotate3d(0, 0, 1, -5deg);
+    }
+  
+    to {
+      -webkit-transform: rotate3d(0, 0, 1, 0deg);
+      transform: rotate3d(0, 0, 1, 0deg);
+    }
+  }
+  .swing {
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    -webkit-animation-name: swing;
+    animation-name: swing;
+  }
+
+  @-webkit-keyframes fadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown; }
+
+    /* Fim animação */
+
+       /*Plugin de Slide*/
+.rslide {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
 
 /*reposive media query start */
 @media (max-width:1300px) {
