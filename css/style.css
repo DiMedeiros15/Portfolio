@@ -161,7 +161,7 @@ section .title::after{
 /* seção home*/
 .home{
     display: flex;
-    background: url("foto.jpg") no-repeat center;
+    background: url("../img/foto.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
