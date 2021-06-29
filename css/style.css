@@ -75,7 +75,7 @@ section .title::after{
     transform: translateX(-50%);
 }
 
-/* navbar styling */
+/* navbar */
 .navbar{
     position: fixed;
     width: 100%;
@@ -124,7 +124,7 @@ section .title::after{
     color: #fff;
 }
 
-/* menu btn styling */
+/* menu btn */
 .menu-btn{
     color: crimson;
     font-size: 23px;
@@ -261,7 +261,7 @@ section .title::after{
         font-weight: 600;
     }
     
-/* seção skills */
+    /* seção skills */
 .skills{
     background: black;
 }
@@ -385,8 +385,7 @@ section .title::after{
    width: 75%;
 }
 
-
-/* seção contato */
+    /* seção contato */
 .contato .title::after{
     content: "Entre em contato";
 }
@@ -435,7 +434,7 @@ section .title::after{
     margin-left: -780px;
 }
 
-/*footer  */
+    /*footer  */
 footer {
     font-family: 'Poppins',sans-serif;
     background: #111;
@@ -459,7 +458,7 @@ footer a:hover {
     transition: all 0.3s ease;
 }
 
-/* Animações */
+    /* Animações */
 
 .js .animar-interno {
     opacity:0;
@@ -537,26 +536,7 @@ footer a:hover {
 
     /* Fim animação */
 
-       /*Plugin de Slide*/
-.rslide {
-    position: relative;
-    list-style: none;
-    overflow: hidden;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .rslides li {
-    -webkit-backface-visibility: hidden;
-    position: absolute;
-    display: none;
-    width: 100%;
-    left: 0;
-    top: 0;
-  }
-
-/*reposive media query start */
+    /*reposive media query start */
 @media (max-width:1300px) {
   .home .max-width{
       margin-left: 0px;
