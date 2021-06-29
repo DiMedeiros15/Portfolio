@@ -50,7 +50,7 @@ section .title{
     text-align: center;
     font-size: 40px;
     font-weight: 500;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -75,6 +75,19 @@ section .title::after{
     transform: translateX(-50%);
 }
 
+.social-media a{
+    color: #fff;
+    font-size: 1.7em;
+    margin-right: 8px;
+    padding: 10px;  
+}
+
+.social-media a:hover{
+    transition: all 1s ease;
+    font-size: 3em;
+}
+
+
 /* navbar */
 .navbar{
     position: fixed;
@@ -95,7 +108,7 @@ section .title::after{
 }
 .navbar .logo a{
     color: #fff;
-    font-size: 35px;
+    font-size: 2.2em;
     font-weight: 600;
 }
 .navbar .logo a span{
@@ -112,16 +125,10 @@ section .title::after{
 .navbar .menu li a{
     display: block;
     color: #fff;
-    font-size: 18px;
+    font-size: 1.3em;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
-}
-.navbar .menu li a:hover{
-    color: crimson;
-}
-.navbar.sticky .menu li a:hover{
-    color: #fff;
 }
 
 /* menu btn */
@@ -158,6 +165,14 @@ section .title::after{
 .scroll-up-btn:hover{
     filter: brightness(90%);
 }
+
+.navbar .menu li a:hover{
+    color: crimson;
+}
+.navbar.sticky .menu li a:hover{
+    color: #fff;
+}
+
 /* seção home*/
 .home{
     display: flex;
@@ -245,7 +260,7 @@ section .title::after{
         margin-top: 20px;
         border-radius: 6px;
         border: 2px solid crimson;
-        transition: all 0.3s ease;
+        transition: all 1s ease;
     }
     .about .about-content .right a:hover{
         color: crimson;
@@ -253,14 +268,14 @@ section .title::after{
     }
     .about .about-content .right p{
         margin: 5px;
-        font-family: Quicksand;
+        font-family: 'Quicksand';
         padding-top: 10px;
     }
     .about .about-content .right span{
         color: crimson;
         font-weight: 600;
     }
-    
+ 
     /* seção skills */
 .skills{
     background: black;
@@ -544,7 +559,7 @@ footer a:hover {
 
 }@media (max-width:1104px) {
     .about .about-content .left img{
-        height: 500px;
+        /* height: 500px; */
         width: 500px;
     }    
     }
