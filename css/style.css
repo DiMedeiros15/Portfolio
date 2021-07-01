@@ -222,62 +222,62 @@ section .title::after{
 
    /* seção about */
 .about .title::after{
-        content: "Quem eu sou";
-    }
-    .about .about-content .left{
-        width: 45%;
-    }
-    .about .about-content .left img{
-        height: 350px;
-        width: 350px;
-        object-fit: cover;
-        border-radius: 180px;
-        border: 2px solid #cecece;
-        box-shadow: 5px 5px 5px #cecece;
+    content: "Quem eu sou";
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 180px;
+    border: 2px solid #cecece;
+    box-shadow: 5px 5px 5px #cecece;
 
-    }
-    .about .about-content .right{
-        width: 55%;
-    }
-    .about .about-content .right .text{
-        font-size: 25px;
-        font-weight: 600;
-        margin-bottom: 10px;
-    }
-    .about .about-content .right .text span{
-        color: crimson;
-    }
-    .about .about-content .right p{
-        text-align: justify;
-    }
-    .about .about-content .right a.wpp{
-        display: inline-block;
-        background: crimson;
-        color: #fff;
-        font-size: 20px;
-        font-weight: 500;
-        padding: 10px 30px;
-        margin-top: 20px;
-        border-radius: 6px;
-        border: 2px solid crimson;
-        transition: all 1s ease;
-    }
-    .about .about-content .right a:hover{
-        color: crimson;
-        background: none;
-    }
-    .about .about-content .right p{
-        margin: 5px;
-        font-family: 'Quicksand';
-        padding-top: 10px;
-    }
-    .about .about-content .right span{
-        color: crimson;
-        font-weight: 600;
-    }
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color: crimson;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right a.wpp{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 1s ease;
+}
+.about .about-content .right a:hover{
+    color: crimson;
+    background: none;
+}
+.about .about-content .right p{
+    margin: 5px;
+    font-family: 'Quicksand';
+    padding-top: 10px;
+}
+.about .about-content .right span{
+    color: crimson;
+    font-weight: 600;
+}
  
     /* seção skills */
-.skills{
+.skills, .contato{
     background: black;
 }
 .skills .title::after{
@@ -294,7 +294,7 @@ section .title::after{
     background: #fff;
     transform: translateX(-50%);
 }
-.skills .title{
+.skills .title, .contato{
     color: #fff;
 }
 .skills .skills-content .column{
@@ -399,10 +399,106 @@ section .title::after{
 .skills .skills-content .right .office::before{
    width: 75%;
 }
+.unir{
+    display: ;
+    /* align-self: center;
+    justify-content: center; */
+}
+.close{
+    display: none;
+    margin-bottom: 20px; 
+    /* background: #333;
+    padding: 15px; */
+}
+
+.arrow_skills{
+    color: #fff; 
+    font-size: 30px;
+    padding: 10px 50px; 
+    
+}
+
+    /* portfolio section  */
+.portfolio .title::after{
+    content: "Trabalhos";
+}
+.portfolio .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.portfolio .carousel .card:hover{
+    background: crimson;
+}
+.portfolio .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.portfolio .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.portfolio .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    color: #fff;
+}
+.portfolio .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}
+.portfolio .carousel .card:hover img{
+    border-color: #fff;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+    transition: all 0.2s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: crimson!important;
+}
+.btn-portfolio{
+    font-size: 1.2em;
+    font-family: "poppins";
+    color: #fff;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
 
     /* seção contato */
 .contato .title::after{
     content: "Entre em contato";
+}
+.contato .title::after{
+    content: "O que sou";
+    background: black;
 }
 .contato .contact-content .column{
     width: calc(50% - 30px);
@@ -414,7 +510,7 @@ section .title::after{
     left: 50%;
     width: 230px;
     height: 3px;
-    background: #111;
+    background: #fff;
     transform: translateX(-50%);
 }
 .contato .contact-content .text{
@@ -425,6 +521,7 @@ section .title::after{
 .contato .contact-content .left p{
     text-align: center;
     font-size: 15px;
+    color: #fff;
 }
 .contato .contact-content .left .icons{
     margin: 8px 0px;
@@ -443,9 +540,9 @@ section .title::after{
 .contato .contact-content .info .head{
     font-weight: 500;
     margin-left: -780px;
+    color: #fff;
 }
 .contato .contact-content .info .sub-title{
-    color: #333;
     margin-left: -780px;
 }
 
