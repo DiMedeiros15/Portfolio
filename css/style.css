@@ -27,7 +27,7 @@ html{
 }
 
 section{
-    padding: 100px 0;
+    padding: 70px 0;
 }
 .max-width{
     max-width: 1300px;
@@ -42,7 +42,7 @@ section{
 .contato .contact-content{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
 }
 section .title{
@@ -222,7 +222,7 @@ section .title::after{
 
    /* seção about */
 .about .title::after{
-    content: "Quem eu sou";
+    content: "Perfil";
 }
 .about .about-content .left{
     width: 45%;
@@ -281,7 +281,7 @@ section .title::after{
     background: black;
 }
 .skills .title::after{
-    content: "O que sou";
+    content: "Habilidades";
     background: black;
 }
 .skills .title::before{
@@ -299,6 +299,7 @@ section .title::after{
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
+    padding-left: 30px;
 }
 .skills .skills-content .left .text{
     font-size: 30px;
@@ -309,8 +310,20 @@ section .title::after{
 .skills .skills-content .left p{
     text-align: justify;
     color: #fff;
+    margin-top: 20px;
+    text-indent: 15px;
 }
-.skills .skills-content .left a{
+
+.texto-skills:hover{
+    background: none;
+    color: crimson;
+    border-radius: 6px;
+    padding: 8px 16px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease; 
+}
+
+.skills .skills-content .left button{
     display: inline-block;
     background: crimson;
     color: #fff;
@@ -320,12 +333,13 @@ section .title::after{
     margin-top: 20px;
     border-radius: 6px;
     border: 2px solid crimson;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; 
 }
-.skills .skills-content .left a:hover{
-    color: crimson;
+.skills .skills-content .left button:hover{
     background: none;
+    color: crimson;
 }
+
 .skills .skills-content .right .bars{
     margin-bottom: 15px;
 }
@@ -399,23 +413,53 @@ section .title::after{
 .skills .skills-content .right .office::before{
    width: 75%;
 }
+
 .unir{
-    display: ;
-    /* align-self: center;
-    justify-content: center; */
+    margin-bottom: 50px;
 }
-.close{
+
+.close,.close2{
     display: none;
-    margin-bottom: 20px; 
+    /* margin-bottom: 20px;  */
     /* background: #333;
     padding: 15px; */
 }
 
+.skill_title{
+    color: #fff;
+}
+
 .arrow_skills{
     color: #fff; 
-    font-size: 30px;
-    padding: 10px 50px; 
-    
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.btn-skills{
+    color: #fff; 
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #fff;
+}
+
+.h1_icon {
+    display: flex; 
+}
+
+.span_icon{
+    display: flex;
+    align-items: center;
+}
+
+.skill_title:hover::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    margin: 0 auto;
+    background: crimson;
 }
 
     /* portfolio section  */
@@ -494,10 +538,10 @@ section .title::after{
 
     /* seção contato */
 .contato .title::after{
-    content: "Entre em contato";
+    content: " ";
 }
 .contato .title::after{
-    content: "O que sou";
+    content: "Entre em contato";
     background: black;
 }
 .contato .contact-content .column{
@@ -576,12 +620,14 @@ footer a:hover {
     opacity:0;
 }
 
+
 .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
   }
+
 
   @keyframes swing {
     20% {

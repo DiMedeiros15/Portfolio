@@ -48,18 +48,48 @@ $(document).ready(function(){
         loop: true
     });
 
+// Skills Hidden 
+    var arrow = document.querySelectorAll('.arrow_skills');
+    var close = document.querySelectorAll('.close');
 
-    var arrow = document.querySelector('.arrow_skills');
-    var close = document.querySelector('.close');
-
-    arrow.addEventListener('click', function () {
-
-        if (close.style.display === 'block') {
-            close.style.display = 'none';
+    arrow[0].addEventListener('click', function () {
+        
+        if (close[0].style.display === 'block') {
+            close[0].style.display = 'none';
         } else {
-            close.style.display = 'block';
+            close[0].style.display = 'block';
         }
     });
+
+    arrow[1].addEventListener('click', function () {
+        
+        if (close[1].style.display === 'block') {
+            close[1].style.display = 'none';
+        } else {
+            close[1].style.display = 'block';
+        }
+    });
+
+    arrow[2].addEventListener('click', function () {
+        
+        if (close[2].style.display === 'block') {
+            close[2].style.display = 'none';
+        } else {
+            close[2].style.display = 'block';
+        }
+    });
+    var btn_arrow = document.querySelector('.btn-skills');
+    var close2 = document.querySelector('.close2');
+
+    btn_arrow.addEventListener('click', function () {
+        
+        if (close2.style.display === 'block') {
+            close2.style.display = 'none';
+        } else {
+            close2.style.display = 'block';
+        }
+    });
+
 
 // owl carousel script
     $('.carousel').owlCarousel({
