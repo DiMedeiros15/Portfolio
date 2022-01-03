@@ -42,8 +42,7 @@ section{
 .contato .contato-content{
     display: flex;
     flex-wrap: wrap;
-     /* align-items: center;  */
-    justify-content: space-between;
+    justify-content: center;
 }
 section .title{
     position: relative;
@@ -225,7 +224,10 @@ section .title::after{
     content: "Perfil";
 }
 .about .about-content .left{
-    width: 45%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .about .about-content .left img{
     height: 350px;
@@ -398,19 +400,22 @@ section .title::after{
     background: crimson;
 }
 .skills .skills-content .right .html::before{
-   width: 50%;
+   width: 75%;
 }
 .skills .skills-content .right .css::before{
-   width: 50%;
+   width: 75%;
 }
 .skills .skills-content .right .js::before{
-   width: 25%;
+   width: 35%;
 }
-.skills .skills-content .right .java::before{
-   width: 25%;
+.skills .skills-content .right .boots::before{
+   width: 90%;
 }
 .skills .skills-content .right .p::before{
    width: 25%;
+}
+.skills .skills-content .right .react::before{
+   width: 10%;
 }
 .skills .skills-content .right .office::before{
    width: 75%;
@@ -751,7 +756,6 @@ footer p a:visited{
 
 }@media (max-width:1104px) {
     .about .about-content .left img{
-        /* height: 500px; */
         width: 500px;
     }    
     }
