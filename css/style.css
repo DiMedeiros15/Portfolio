@@ -279,6 +279,8 @@ section .title::after{
     /* seção skills */
 .skills, .contato{
     background: black;
+    padding: 120px 0;
+
 }
 .skills .title::after{
     content: "Habilidades";
@@ -667,7 +669,6 @@ footer p a:visited{
 .js .animar-interno {
     opacity:0;
 }
-
 
 .animated {
     -webkit-animation-duration: 1s;
