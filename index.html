@@ -170,18 +170,32 @@
                 <div class="close">
                     <div class="bars">
                         <div class="info">
-                            <span>Python</span>
+                            <span>PHP</span>
                             <span>25%</span>
                         </div>
-                        <div class="line p"></div>
+                        <div class="line php"></div>
                     </div>
                     <div class="bars">
+                        <div class="info">
+                            <span>WordPress </span>
+                            <span>25%</span>
+                        </div>
+                        <div class="line wp"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Drupal</span>
+                            <span>25%</span>
+                        </div>
+                        <div class="line dp"></div>
+                    </div>
+                    <!-- <div class="bars">
                         <div class="info">
                             <span>React</span>
                             <span>10%</span>
                         </div>
                         <div class="line react"></div>
-                    </div>
+                    </div> -->
                 </div> 
             </div>
 
@@ -200,6 +214,13 @@
                             <span>75%</span>
                         </div>
                         <div class="line office"></div>
+                    </div> 
+                    <div class="bars">
+                        <div class="info">
+                            <span>Power BI</span>
+                            <span>20%</span>
+                        </div>
+                        <div class="line bi"></div>
                     </div> 
                 </div> 
             </div>
@@ -283,23 +304,26 @@
                 </div>
                 <div class="column right">
                     <div class="text">Entre em contato</div>
-                    <form action="#">
+                    <form action="https://api.staticforms.xyz/submit" method="post">
                         <div class="fields">
+                            <input type="hidden" name="accessKey" value="3ef95945-3c63-4115-8c4f-2da10a304f2b">
+                            <input type="hidden" name="redirectTo" value="https://dimedeiros15.github.io/portfolio/">
+                                                       
                             <div class="field name">
-                                <input type="text" placeholder="Nome" required>
+                                <input type="text" placeholder="Nome" name="name" id="nome" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Email" required>
+                                <input type="email" placeholder="Email" name="email" id="email" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Assunto" required>
+                            <input type="text" placeholder="Assunto" name="subject" id="assunto" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Messagem.." required></textarea>
+                            <textarea cols="30" rows="10" placeholder="Messagem.." name="message" id="mensagem" required></textarea>
                         </div>
                         <div class="button-area">
-                            <button type="submit">Enviar</button>
+                            <button type="submit" value="submit" id="btn">Enviar</button>
                         </div>
                     </form>
                 </div>
@@ -317,6 +341,7 @@
     <script src="js/script.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    
     <!-- Final JS -->
 </body>
 </html>
