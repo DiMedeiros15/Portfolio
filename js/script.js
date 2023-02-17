@@ -48,44 +48,6 @@ $(document).ready(function () {
     loop: true,
   });
 
-  // Skills
-  var arrow = document.querySelectorAll(".arrow_skills");
-  var close = document.querySelectorAll(".close");
-
-  arrow[0].addEventListener("click", function () {
-    if (close[0].style.display === "block") {
-      close[0].style.display = "none";
-    } else {
-      close[0].style.display = "block";
-    }
-  });
-
-  arrow[1].addEventListener("click", function () {
-    if (close[1].style.display === "block") {
-      close[1].style.display = "none";
-    } else {
-      close[1].style.display = "block";
-    }
-  });
-
-  arrow[2].addEventListener("click", function () {
-    if (close[2].style.display === "block") {
-      close[2].style.display = "none";
-    } else {
-      close[2].style.display = "block";
-    }
-  });
-  var btn_arrow = document.querySelector(".btn-skills");
-  var close2 = document.querySelector(".close2");
-
-  btn_arrow.addEventListener("click", function () {
-    if (close2.style.display === "block") {
-      close2.style.display = "none";
-    } else {
-      close2.style.display = "block";
-    }
-  });
-
   // carousel script
   $(".carousel").owlCarousel({
     margin: 20,
@@ -109,6 +71,18 @@ $(document).ready(function () {
     },
   });
 });
+
+const chk = document.getElementById('ball')
+const alt = document.querySelector('div #ball')
+let ab = document.querySelector('.about')
+let ptf = document.querySelector('.portfolio')
+
+chk.addEventListener('click', () =>{
+  alt.classList.toggle('active')
+  ab.classList.toggle('dark')
+  ptf.classList.toggle('dark')
+
+})
 
 // let btn = document.getElementById("btn");
 // btn.addEventListener("click", function (e) {
