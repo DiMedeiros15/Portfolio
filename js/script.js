@@ -84,6 +84,18 @@ chk.addEventListener('click', () =>{
 
 })
 
+document.addEventListener('mouseenter', (event) => {
+  const element = event.target;
+  if (element.classList.contains('change-cursor')) {
+      document.body.style.cursor = 'url(/img/cursor.png), auto';
+  }
+});
+
+// Evento quando o cursor sai de um elemento
+document.addEventListener('mouseleave', (event) => {
+  document.body.style.cursor = 'url(/img/cursor.png), auto';
+});
+
 // let btn = document.getElementById("btn");
 // btn.addEventListener("click", function (e) {
 //   e.preventDefault();

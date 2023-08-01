@@ -12,26 +12,9 @@ html {
   scroll-behavior: smooth;
 }
 
-:root{
-  /* --primary-color: #cf0f0f;
-  --primary-color-contrast: #ffffff;
-  --field-background-color: #000; */
+body{
+  cursor: url('/img/cursor.png'), auto;
 }
-
-/* .light{
-  --page-background: Linear-gradient(
-      180deg,
-      #ffffff 0%,
-      #ffffff 65%,
-      rgba(255,255,255, 0.75) 100%
-  );
-  --header-background-color: #e3e3e3;
-  --highlight-color:#000000;
-  --feature-font-family: "Archivo", sans-serif;
-  --character-top-image-color:#ffffff;
-  --character-bottom-image-color: #b5bbbf;
-  --footer-background-color: #b5bbbf;
-} */
 
 .dark {
 /* --feature-font-family: "Rubik Glitch", sans-serif;  */
@@ -111,11 +94,6 @@ section .title::after {
   font-size: 1.7em;
   margin-right: 8px;
   padding: 10px;
-}
-
-.social-media a:hover {
-  transition: all 1s ease;
-  color: crimson;
 }
 
 /* navbar */
@@ -231,12 +209,15 @@ section .title::after {
   margin: auto 0 auto 30px;
 }
 .home .home-content .text-1 {
-  font-size: 27px;
+  font-size: 35px;
 }
-.home .home-content .text-2 {
-  font-size: 75px;
-  font-weight: 600;
-  margin-left: -3px;
+.home .home-content .text-2 { 
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  max-width: 719px;
+  margin-bottom: 50px;
 }
 .home .home-content .text-3 {
   font-size: 40px;
@@ -248,19 +229,30 @@ section .title::after {
 }
 .home .home-content a {
   display: inline-block;
-  background: crimson;
   color: #fff;
   font-size: 25px;
   padding: 12px 36px;
   margin-top: 20px;
   font-weight: 400;
   border-radius: 6px;
-  border: 2px solid crimson;
   transition: all 0.3s ease;
+  border: 1px solid #fff;
+  font-weight: 800;
 }
-.home .home-content a:hover {
-  color: crimson;
-  background: none;
+
+.contact-us{
+  padding: 12px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  transition: all 0.4s ease-in-out 0s;
+  background: linear-gradient(131deg, rgb(54, 152, 201) 1.59%, rgb(40, 204, 135) 100%);
+  color: rgb(255, 255, 255);
 }
 
 .controlls-animate {
@@ -280,8 +272,8 @@ section .title::after {
   justify-content: center;
 }
 .about .about-content .left img {
-  height: 350px;
-  width: 350px;
+  height: 450px;
+  width: 450px;
   object-fit: cover;
   border-radius: 18px;
   border: 2px solid #cecece;
@@ -312,11 +304,13 @@ section .title::after {
   border: 2px solid crimson;
   transition: all 1s ease;
 }
-.about .about-content .right a:hover {
-  color: crimson;
-  text-shadow: 1px 1px 3px #00bbc5;
-  
+
+.about-content .right a.wpp:hover {
+  color: #fff;
+  border: 2px solid #111;
+  background: crimson;
 }
+
 .about .about-content .right p {
   margin: 5px;
   font-family: "Quicksand";
@@ -325,6 +319,31 @@ section .title::after {
 .about .about-content .right span {
   color: crimson;
   font-weight: 600;
+}
+
+.perfil{
+  padding: 42px;
+  border-radius: 22.5px;
+  box-shadow: rgba(62, 62, 62, 0.35) 0px 0.833333px 2.5px 0px;
+}
+
+.state{
+  border-radius: 11.667px;
+  width: max-content;
+  background: rgb(43, 43, 43);
+  color: rgb(255, 255, 255);
+  font-family: __Rubik_127116, __Rubik_Fallback_127116, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  padding: 12px 25px;
+  line-height: 140%;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+}
+
+.fa-whatsapp{
+  color: #25D366;
 }
 
 /* seção skills */
@@ -392,7 +411,6 @@ section .title::after {
   background: crimson;
 }
 
-
 .skills_title {
   display: flex;
   margin-bottom: 2.5rem;
@@ -454,28 +472,22 @@ section .title::after {
 
 /* portfolio section  */
 
-
-
 .portfolio .title::after {
   content: "Projetos";
 }
 .portfolio .carousel .card {
-  background: #111;
-  border-radius: 0 0 6px;
+  background: rgb(37, 41, 51);
+  border-radius: 10px;
   box-shadow: 2px 3px 3px 2px rgba(0, 0, 0, 0.3);
-  padding: 5px 5px;
+  padding: 0px 0px 50px 0px;
   overflow: hidden;
   transition: all 0.3s ease;
 }
-.portfolio .carousel .card:hover {
-  background: crimson;
-  border: none;
-}
+
 .portfolio .carousel .card .box {
   display: flex;
   flex-direction: column;
   align-items: start;
-  /* justify-content: center; */
   transition: all 0.3s ease;
 }
 .portfolio .carousel .card:hover .box img {
@@ -486,7 +498,7 @@ section .title::after {
 .portfolio .carousel .card .text {
   font-size: 25px;
   font-weight: 500;
-  margin: 10px;
+  margin: 20px;
   color: #fff;
 }
 
@@ -534,13 +546,17 @@ section .title::after {
 }
 .btn-portfolio {
   font-family: "poppins";
-  color: #fff;
-  padding: 10px 15px;
-  border: 2px solid #fff;
+  padding: 12px 30px;
+  gap: 10px;
+  font-style: normal;
+  transition: all 0.4s ease-in-out 0s;
   border-radius: 10px;
-  margin: 10px;
-  font-size: 0.95rem;
-  letter-spacing: 1.5px;
+  border: 1px solid rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23.639px;
 }
 
 /* seção contato */
@@ -627,6 +643,14 @@ section .title::after {
 .contato .right form .textarea textarea {
   padding-top: 10px;
   resize: none;
+}
+
+.contato-space{
+  margin-top: 20px;
+}
+
+.contato-space:hover{
+  color: rgb(124, 137, 153);
 }
 
 .right form .button-area button {
@@ -757,7 +781,7 @@ footer p a:visited {
 @media (max-width: 1104px) {
   .about .about-content .left img {
     height: 2line p50px;
-    width: 250px;
+    width: 60%;
   }
 }
 @media (max-width: 991px) {
@@ -769,6 +793,9 @@ footer p a:visited {
   .menu-btn {
     display: block;
     z-index: 999;
+  }
+  .perfil{
+    max-width: 100%;
   }
   .menu-btn i.active:before {
     content: "\f00d";
