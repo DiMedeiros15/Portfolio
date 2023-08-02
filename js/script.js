@@ -86,7 +86,7 @@ chk.addEventListener('click', () =>{
 
 document.addEventListener('mouseenter', (event) => {
   const element = event.target;
-  if (element.classList.contains('change-cursor')) {
+  if (element?.classList?.contains('change-cursor')) {
       document.body.style.cursor = 'url(/img/cursor.png), auto';
   }
 });
