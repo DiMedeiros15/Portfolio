@@ -607,6 +607,8 @@ section .title::after {
   color: #fff;
 }
 
+
+
 /* footer */
 footer {
   background: #111;
@@ -625,8 +627,8 @@ footer span a:hover {
 footer p a:visited {
   color: #fff;
 }
-/* Animações */
 
+/* Animações */
 .js .animar-interno {
   opacity: 0;
 }
@@ -756,7 +758,7 @@ footer p a:visited {
     font-size: 25px;
   }
   .home .home-content .text-2 {
-    font-size: 70px;
+    font-size: 1rem;
   }
   .home .home-content .text-3 {
     font-size: 35px;
@@ -784,14 +786,14 @@ footer p a:visited {
     width: 100%;
     margin-bottom: 35px;
   }
+  .home .home-content a{
+    width: 60%;
+  }
 }
 
 @media (max-width: 690px) {
   .max-width {
     padding: 0 23px;
-  }
-  .home .home-content .text-2 {
-    font-size: 60px;
   }
   .home .home-content .text-3 {
     font-size: 32px;
@@ -810,12 +812,15 @@ footer p a:visited {
     align-items: center;
     justify-content: center;
   }
+  .wpp{
+    width: 95%;
+  }
+  .greet{
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 500px) {
-  .home .home-content .text-2 {
-    font-size: 50px;
-  }
   .home .home-content .text-3 {
     font-size: 27px;
   }
@@ -840,9 +845,16 @@ footer p a:visited {
     font-size: 23px;
     line-height: 38px;
   }
+  iframe{
+    height: 300px;
+    width: 300px;
+  }
   @media (max-width: 380px) {
     .controlls-animate {
       display: none;
+    }
+    .title{
+      padding-bottom: 30px;
     }
   }
 }
