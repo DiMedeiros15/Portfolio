@@ -80,6 +80,7 @@ let ptf = document.querySelector('.portfolio')
 chk.addEventListener('click', () =>{
   alt.classList.toggle('active')
   ab.classList.toggle('dark')
+  ab.style.transition = 'all 1s';
   ptf.classList.toggle('dark')
 
 })

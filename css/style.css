@@ -19,8 +19,9 @@ html {
 .dark {
 /* --feature-font-family: "Rubik Glitch", sans-serif;  */
 --background-color: #111;
---title-color: #fff
+--title-color: #fff;
 --section-title-after: none;
+--section-title-before: #fff;
 }
 
 /* custom scroll bar */
@@ -58,6 +59,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 30px 0px;
 }
 section .title {
   position: relative;
@@ -303,6 +305,7 @@ section .title::after {
   border-radius: 6px;
   border: 2px solid crimson;
   transition: all 1s ease;
+  margin-right: 25px;
 }
 
 .about-content .right a.wpp:hover {
@@ -855,6 +858,10 @@ footer p a:visited {
     height: 300px;
     width: 300px;
   }
+  .home-content{
+    margin-top: 150px;
+  }
+
   @media (max-width: 380px) {   
     .title{
       padding-bottom: 35px !important;
@@ -886,12 +893,17 @@ footer p a:visited {
   height: 20px;
   width: 20px;
   transform: translateX(0px);
+  transition: 2s ease-in-out all;
+}
+
+.label #ball{
+  transition: 1s ease-in-out all;
 }
 
 .label #ball.active{
   transform: translateX(24px);
-  transition: 1s ease-in-out all;
 } 
+
 
 .fa-moon {
   color: #d6d6d6;
@@ -909,12 +921,17 @@ footer p a:visited {
   background-color: var(--background-color)
 }
 
+.dark .title::before{
+  background-color: #fff !important;
+}
+
 .dark {
   color: #fff;
 }
 
 .dark .about-content .right a.wpp{
   color: #fff;
+  margin-right: 25px;
 }
 
 
