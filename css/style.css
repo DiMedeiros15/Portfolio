@@ -12,12 +12,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* body{
-  cursor: url('/img/cursor.png'), auto;
-} */
-
 .dark {
-/* --feature-font-family: "Rubik Glitch", sans-serif;  */
 --background-color: #111;
 --title-color: #fff;
 --section-title-after: none;
@@ -91,9 +86,15 @@ section .title::after {
   transform: translateX(-50%);
 }
 
+.contato h4{
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+}
+
 .social-media a {
   color: #fff;
-  font-size: 1.7em;
+  font-size: 15px;
   margin-right: 8px;
   padding: 10px;
 }
@@ -232,7 +233,7 @@ section .title::after {
 .home .home-content a {
   display: inline-block;
   color: #fff;
-  font-size: 25px;
+  font-size: 15px;
   padding: 12px 36px;
   margin-top: 20px;
   font-weight: 400;
@@ -251,7 +252,6 @@ section .title::after {
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
-  line-height: 30px;
   transition: all 0.4s ease-in-out 0s;
   background: linear-gradient(131deg, rgb(54, 152, 201) 1.59%, rgb(40, 204, 135) 100%);
   color: rgb(255, 255, 255);
@@ -933,7 +933,3 @@ footer p a:visited {
   color: #fff;
   margin-right: 25px;
 }
-
-
-
-
