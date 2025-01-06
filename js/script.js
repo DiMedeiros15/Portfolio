@@ -1,6 +1,5 @@
 $(document).ready(function () {
   $(window).scroll(function () {
-    // sticky navbar on scroll script
     if (this.scrollY > 20) {
       $(".navbar").addClass("sticky");
     } else {
@@ -35,14 +34,14 @@ $(document).ready(function () {
 
   // animation script
   var typed = new Typed(".escrevendo", {
-    strings: ["Desenvolvedor Front-End", "Suporte"],
+    strings: ["Desenvolvedor Web", "Analista de Suporte" , "Analista Drupal" ],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
   });
 
   var typed = new Typed(".escrevendo-2", {
-    strings: ["Desenvolvedor Front-end", "Suporte"],
+    strings: ["Desenvolvedor web", "Suporte", "Analista Drupal"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
@@ -96,26 +95,3 @@ document.addEventListener('mouseenter', (event) => {
 document.addEventListener('mouseleave', (event) => {
   document.body.style.cursor = 'url(/img/cursor.png), auto';
 });
-
-// let btn = document.getElementById("btn");
-// btn.addEventListener("click", function (e) {
-//   e.preventDefault();
-//   let nome = document.getElementById("nome").value;
-//   let email = document.getElementById("email").value;
-//   let assunto = document.getElementById("assunto").value;
-//   let mensagem = document.getElementById("mensagem").value;
-//   let corpo = ` nome: ${nome} 
-//                  email  ${email}
-//                  assunto: ${assunto} 
-//                  mensagem  ${mensagem}`;
-
-//   Email.send({
-//     Host: "smtp.yourisp.com",
-//     Username: "dimedeiros15@gmail.com",
-//     Password: "ljhyilaoccdtqtlc",
-//     To: "dimedeiros15@gmail.com",
-//     From: email,
-//     Subject: assunto,
-//     Body: corpo,
-//   }).then((message) => alert(message));
-// });
