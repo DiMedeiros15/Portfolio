@@ -200,7 +200,7 @@ section .title::after {
 /* seção home*/
 .home {
   display: flex;
-  background: url("../img/foto.jpg") no-repeat center;
+  background: url("../img/foto.webp") no-repeat center;
   height: 100vh;
   color: #fff;
   min-height: 500px;
@@ -521,6 +521,7 @@ section .title::after {
   background: crimson;
   padding: 5px;
   border-radius: 10px;
+  text-transform: capitalize;
 }
 
 .portfolio .carousel .card img {
